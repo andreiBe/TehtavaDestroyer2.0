@@ -1,0 +1,28 @@
+#a,b,c
+#Ratkaisee toisen asteen yhtalon
+list = []
+
+line1 = s("a*x^2+b*x+c")
+
+line2 = s("x = (-b\\pm\\ sqrt(b^2-4*a*c))/(2*a)")
+
+dis = sl("b^2-4*a*c")
+a = sl("-b")
+b = sl("sqrt(b^2-4*a*c)")
+c = sl("2*a")
+try {
+    num = toNum(dis)
+    if (num < 0) {
+        line3 = s("x = (" + a + "\\pm sqrt("+dis+"))/("+c+")")
+        return latex([line1,line2,line3, "Ei\\ ratkaisuja"])
+    }
+}
+
+line3 = "x = (" + a + " \\pm " + b + ")/(" + c + ")"
+
+plus = "x = " + sl("(-b+sqrt(b^2-4*a*c))/(2*a)")
+minus = "x = " + sl("(-b-sqrt(b^2-4*a*c))/(2*a)")
+
+list.add(line1,line2,line3,plus,minus)
+
+return latex(list)

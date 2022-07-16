@@ -1,0 +1,7 @@
+#P,U,I
+#Yhtalo P=U*I
+return fysik("P=U*I", {
+    P: {yks: "W"},
+    U: {yks: "V"},
+    I: {yks: "A"}
+})

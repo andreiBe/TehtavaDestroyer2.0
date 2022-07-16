@@ -1,0 +1,12 @@
+#i_1,i_2,j_1,j_2
+#Laskee vektorien pistetulon
+lasku = s("i_1*i_2+j_1*j_2")
+
+line1 = (
+"\\bar{a} \\cdot \\bar{b}="
++ s("(i_1\\bar{i} + j_1\\bar{j})(i_2\\bar{i}+j_2\\bar{j})=")
++ lasku
+)
+line3 = "="+l(lasku)
+
+return latex([line1,line3])

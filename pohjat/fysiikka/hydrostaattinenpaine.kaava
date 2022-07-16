@@ -1,0 +1,8 @@
+#p,g,h,rho
+#laskee hydrostaattisen paineen
+return fysik("p=g*h*rho", {
+    g: {yks: "m/s^2"},
+    p: {yks: "Pa"},
+    h: {yks: "m"},
+    rho: {yks: "(kg)/m^3"}
+})

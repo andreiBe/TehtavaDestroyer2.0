@@ -1,0 +1,9 @@
+#Q,c,m,t,aine
+#Yhtalo Q=cm Delta t
+obj = vars()
+return fysik("Q = c * m * t", {
+    Q: {yks: "kJ"},
+    c: {yks: "(kJ)/(kg degree C)", nimi: "c_("+obj.aine+")"},
+    m: {yks: "kg"},
+    t: {nimi: "Delta t", yks: "degree C"}
+})

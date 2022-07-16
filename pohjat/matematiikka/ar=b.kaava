@@ -1,0 +1,13 @@
+#r,b,a
+#Yhtalo: a=b/r
+list = []
+objekti = vars()
+
+line1 = "\\alpha = b/r = " + s("(b)/(r) \\approx ") + sd("(b)/(r)") + " (rad)"
+if (objekti.r == "?") {
+    line1 = "\\alpha = b/r \tr=(b)/(\\alpha) = " + s("(b)/(a) \\approx ") + sl("(b)/(a)")
+}
+elif (objekti.b == "?") {
+    line1 = "\\alpha = b/r \tb=\\alpha r = " + s("a * r \\approx ") + sl("a*r")
+}
+return latex([line1])

@@ -1,0 +1,63 @@
+.root {
+    -fx-base: derive(rgba(43, 46, 48, 255),1%); // dark
+    -fx-control-inner-background: derive(-fx-base,10%);
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.button {
+    -fx-focus-traversable: false;
+}
+.text-field {
+    -fx-prompt-text-fill: lightgray;
+}
+#createButton {
+    -fx-font-size: 32px;
+}
+#codeArea,
+#muuttujatTextField{
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: lightgray;
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+}
+#codeArea {
+    -fx-text-inner-color: derive(-fx-base,10%);
+    -fx-background-color: derive(-fx-base,10%);
+    -fx-padding: 6;
+    -fx-text-fill: white;
+}
+#codeArea .text{
+    -fx-fill: #FFFFFF;
+}
+.variable {
+    -fx-fill: #FFAA00 !important;
+}
+.doubleDot {
+    -fx-fill: yellow !important;
+}
+.function {
+    -fx-fill: lime !important;
+}
+#codeArea .caret {
+    -fx-stroke: white;
+}
+#muuttujaLabel {
+    -fx-font-size: 26px;
+}
+.list-cell:even,
+.list-cell:odd {
+    -fx-control-inner-background: derive(-fx-base,10%);
+}
+.list-cell:filled:selected {
+    /* 4: (Styling when out of focus)*/
+    -fx-background-color: derive(-fx-base,10%);
+    -fx-background-color: -fx-accent;
+    -fx-text-fill: white;
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent;
+}
+.list-cell {
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color:transparent;
+}
